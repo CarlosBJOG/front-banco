@@ -46,7 +46,8 @@ export const Cola = () => {
                     style={{ width: 300, marginTop: 16}}
                     actions= {[
                       <Tag color="volcano"> { item.agente } </Tag>,
-                      <Tag color="magenta">Escritorio { item.escritorio } </Tag>
+                      <Tag color="magenta">Escritorio { item.escritorio } </Tag>,
+                      <Tag color="green">Time: { (item.time).toFixed(2) }min </Tag>
                     
                     ]}
                   >
@@ -74,6 +75,8 @@ export const Cola = () => {
 
                           <Text type="secondary">Agente:  </Text>
                           <Tag color="volcano">{ item.agente }</Tag>
+
+                          
                         </>
                     }
                   />
